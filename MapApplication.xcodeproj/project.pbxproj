@@ -15,6 +15,9 @@
 		03277F082628512B00EBE3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03277F062628512B00EBE3BA /* LaunchScreen.storyboard */; };
 		03277F132628546300EBE3BA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03277F122628546300EBE3BA /* SnapKit */; };
 		03277F1C262855F200EBE3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03277F1B262855F200EBE3BA /* ViewController.swift */; };
+		FA36F6B52628A37400A00982 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36F6B42628A37400A00982 /* MapAnnotation.swift */; };
+		FA36F6B82628B17E00A00982 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36F6B72628B17E00A00982 /* LocationManager.swift */; };
+		FA36F6BC2628BFF600A00982 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36F6BB2628BFF600A00982 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		03277F072628512B00EBE3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03277F092628512C00EBE3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03277F1B262855F200EBE3BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA36F6B42628A37400A00982 /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		FA36F6B72628B17E00A00982 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FA36F6BB2628BFF600A00982 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				03277F1B262855F200EBE3BA /* ViewController.swift */,
+				FA36F6BB2628BFF600A00982 /* WebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 		03277F202628633B00EBE3BA /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				FA36F6B72628B17E00A00982 /* LocationManager.swift */,
+				FA36F6B32628A32B00A00982 /* Models */,
 				03277F212628634400EBE3BA /* Controller */,
 			);
 			path = Location;
@@ -134,6 +143,14 @@
 				03277EFF2628512900EBE3BA /* MapViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA36F6B32628A32B00A00982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA36F6B42628A37400A00982 /* MapAnnotation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03277F002628512900EBE3BA /* MapViewController.swift in Sources */,
+				FA36F6B52628A37400A00982 /* MapAnnotation.swift in Sources */,
+				FA36F6B82628B17E00A00982 /* LocationManager.swift in Sources */,
 				03277EFC2628512900EBE3BA /* AppDelegate.swift in Sources */,
+				FA36F6BC2628BFF600A00982 /* WebViewController.swift in Sources */,
 				03277F1C262855F200EBE3BA /* ViewController.swift in Sources */,
 				03277EFE2628512900EBE3BA /* SceneDelegate.swift in Sources */,
 			);
@@ -363,13 +383,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KG39R2KX5K;
+				DEVELOPMENT_TEAM = PU2J6NK4U6;
 				INFOPLIST_FILE = MapApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.korneyeva.MapApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = by.korneyeva.MapApplication1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,13 +403,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KG39R2KX5K;
+				DEVELOPMENT_TEAM = PU2J6NK4U6;
 				INFOPLIST_FILE = MapApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.korneyeva.MapApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = by.korneyeva.MapApplication1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

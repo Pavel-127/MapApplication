@@ -26,6 +26,14 @@ class ViewController: UIViewController {
         self.initController()
     }
 
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     private func _initController() {
         self.view.backgroundColor = .white
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
